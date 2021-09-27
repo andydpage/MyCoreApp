@@ -16,4 +16,4 @@ steps:
   - $env:path
   - dotnet --list-sdks
   - dotnet nuget list source
-  - dotnet add package Microsoft.AspNetCore
+  - dotnet add "MyCoreApp" package Microsoft.AspNetCore
