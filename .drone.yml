@@ -18,3 +18,4 @@ steps:
   - dotnet nuget list source
   - dotnet add "MyCoreApp" package Microsoft.AspNetCore
   
+  
