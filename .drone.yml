@@ -12,7 +12,7 @@ steps:
   - echo hello world
 - name: build
   commands:
-  - $env:Path += ";C:\Users\andrew_page\AppData\Local\Microsoft\dotnet"
+  - "$env:Path += ";C:\Users\andrew_page\AppData\Local\Microsoft\dotnet""
   - "dir env:"
   - dotnet build
   
