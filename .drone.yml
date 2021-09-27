@@ -13,4 +13,5 @@ steps:
 - name: build
   commands:
   - cd C:\Users\andrew_page\AppData\Local\Microsoft\dotnet
+  - dir
   - dotnet build
