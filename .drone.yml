@@ -10,3 +10,6 @@ steps:
 - name: greeting
   commands:
   - echo hello world
+- name: greeting
+  commands:
+  - dotnet build
