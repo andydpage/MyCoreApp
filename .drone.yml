@@ -1,0 +1,12 @@
+kind: pipeline
+type: exec
+name: MyCoreApp
+
+platform:
+  os: windows
+  arch: amd64
+
+steps:
+- name: greeting
+  commands:
+  - echo hello world
