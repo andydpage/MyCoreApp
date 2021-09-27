@@ -16,4 +16,4 @@ steps:
   - $env:path
   - dotnet --list-sdks
   - dotnet nuget list source
-  - dotnet restore --ignore-failed-sources
+  - dotnet add package Newtonsoft.Json
