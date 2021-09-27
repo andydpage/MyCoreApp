@@ -13,7 +13,6 @@ steps:
 - name: build
   commands:
   - set PATH=%PATH%;"C:\Users\andrew_page\AppData\Local\Microsoft\dotnet"
-  - set
-  - cd
+  - dir env:
   - dotnet build
   
