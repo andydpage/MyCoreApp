@@ -15,6 +15,6 @@ steps:
   - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
   - "dir env:"
   - $env:path
-  - dotnet nuget add source --name nuget.org https://api.nuget.org/v3/index.json
+  - dotnet nuget add source https://api.nuget.org/v3/index.json
   - dotnet build
   
