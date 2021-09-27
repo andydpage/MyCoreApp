@@ -15,5 +15,3 @@ steps:
   - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
   - "dir env:"
   - $env:path
-  - dotnet build
-  
