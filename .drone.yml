@@ -12,6 +12,6 @@ steps:
   - echo hello world
 - name: build
   commands:
-  - cd C:\Users\andrew_page\AppData\Local\Microsoft\dotnet
-  - dir
-  - C:\Users\andrew_page\AppData\Local\Microsoft\dotnet\dotnet.exe build
+  - set PATH=%PATH%;C:\Users\andrew_page\AppData\Local\Microsoft\dotnet
+  - dotnet build
+  
