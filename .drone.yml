@@ -14,9 +14,8 @@ steps:
   commands:
   - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
   - $env:path
+  - $env:DRONE_WORKSPACE
   - "dir env:"
   - dotnet --list-sdks
   - dotnet nuget list source
-  - dotnet add "MyCoreApp" package Microsoft.AspNetCore
-  - $env:DRONE_WORKSPACE
-  
+  - dotnet restore
