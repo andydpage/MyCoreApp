@@ -14,7 +14,7 @@ steps:
   commands:
   - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
   - $env:path
-  - $env:DRONE_WORKSPACE
+  - echo $DRONE_WORKSPACE
   - "dir env:"
   - dotnet --list-sdks
   - dotnet nuget list source
