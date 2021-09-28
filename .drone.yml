@@ -18,4 +18,5 @@ steps:
   - dotnet --list-sdks
   - dotnet nuget list source
   - dotnet add "MyCoreApp" package Microsoft.AspNetCore
+  - $env:DRONE_WORKSPACE
   
