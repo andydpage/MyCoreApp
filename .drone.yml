@@ -14,6 +14,7 @@ steps:
   commands:
   - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
   - $env:path
+  - "dir env:"
   - dotnet --list-sdks
   - dotnet nuget list source
   - dotnet add "MyCoreApp" package Microsoft.AspNetCore
