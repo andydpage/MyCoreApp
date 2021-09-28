@@ -14,7 +14,6 @@ steps:
   commands:
   - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
   - $env:path
-  - Write-Output $APPDATA
   - "dir env:"
   - dotnet --list-sdks
   - dotnet nuget list source
