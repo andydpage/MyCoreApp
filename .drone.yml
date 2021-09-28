@@ -17,5 +17,7 @@ steps:
   - "dir env:"
   - dotnet --list-sdks
   - dotnet nuget list source
+  - $env:Temp = 'C:\Windows\TEMP'
+  - $env:Temp
   - dotnet restore
   
