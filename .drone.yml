@@ -13,9 +13,9 @@ steps:
 - name: build
   commands:
   - pwd
-  - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
-  - $env:path
-  - "dir env:"
-  - dotnet --list-sdks
-  - dotnet restore
+#  - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
+#  - $env:path
+#  - "dir env:"
+#  - dotnet --list-sdks
+#  - dotnet restore
 
