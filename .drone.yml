@@ -16,5 +16,4 @@ steps:
   - $env:path
   - "dir env:"
   - dotnet --list-sdks
-#  - dotnet nuget list source
-#  - dotnet restore
+  - dotnet restore
