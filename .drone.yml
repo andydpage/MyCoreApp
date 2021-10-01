@@ -13,7 +13,7 @@ steps:
 - name: build
   commands:
   - pwd
-  - Get-ChildItem -Path .\*
+  - "dir env:"
 #  - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
 #  - $env:path
 #  - "dir env:"
