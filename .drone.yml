@@ -10,3 +10,11 @@ steps:
 - name: greeting
   commands:
   - echo hello world 3
+- name: build
+  commands:
+  - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
+  - $env:path
+  - "dir env:"
+  - dotnet --list-sdks
+#  - dotnet nuget list source
+#  - dotnet restore
