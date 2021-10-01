@@ -4,7 +4,7 @@ name: MyCoreApp
 
 platform:
   os: windows
-  arch: x64
+  arch: amd64
 
 steps:
 - name: greeting
