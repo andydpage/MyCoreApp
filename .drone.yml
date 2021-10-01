@@ -4,7 +4,7 @@ name: MyCoreApp
 
 platform:
   os: windows
-  arch: amd64
+  arch: x64
 
 steps:
 - name: greeting
@@ -16,7 +16,7 @@ steps:
   - $env:path
   - "dir env:"
   - dotnet --list-sdks
-  - dotnet nuget list source
-  - dotnet restore
+#  - dotnet nuget list source
+#  - dotnet restore
   
   
