@@ -20,5 +20,5 @@ steps:
 #  - dotnet --list-sdks
   - cd C:\Users\andrew_page\MyCoreApp\MyCoreApp
   - pwd
-  - dotnet restore --verbosity 3
+  - dotnet restore --verbosity diag
 
