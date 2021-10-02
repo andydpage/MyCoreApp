@@ -18,7 +18,5 @@ steps:
 #  - $env:path
 #  - "dir env:"
 #  - dotnet --list-sdks
-  - cd C:\Users\andrew_page\MyCoreApp\MyCoreApp
-  - pwd
-  - dotnet restore --verbosity diag
+   - dotnet restore --verbosity diag
 
