@@ -18,5 +18,5 @@ steps:
 #  - $env:path
 #  - "dir env:"
 #  - dotnet --list-sdks
+   - $env:NUGET_PACKAGES = 'C:\Users\andrew_page\.nuget\packages'
    - dotnet restore --verbosity diag
-
