@@ -20,4 +20,4 @@ steps:
 #  - dotnet --list-sdks
    - $env:NUGET_PACKAGES = 'C:\Users\andrew_page\.nuget\packages'
    - dotnet build
-   - sleep 300
+#  - sleep 300
