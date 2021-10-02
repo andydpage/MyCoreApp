@@ -21,5 +21,5 @@ steps:
    - $env:NUGET_PACKAGES = 'C:\Users\andrew_page\.nuget\packages'
    - dotnet build
    - dotnet publish --configuration Release
-   - Compress-Archive -Path $DRONE_WORKSPACE\MyCoreApp\bin\Release\netcoreapp3.1 -DestinationPath C:\Windows\Temp\mycoreapp.zip
+   - Compress-Archive -Path $env:DRONE_WORKSPACE\MyCoreApp\bin\Release\netcoreapp3.1 -DestinationPath C:\Windows\Temp\mycoreapp.zip
    - sleep 120
