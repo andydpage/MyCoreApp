@@ -23,7 +23,7 @@ steps:
 
 - name: publish
   commands:
-- dotnet publish --configuration Release
+  - dotnet publish --configuration Release
 
 - name: compress artifact
   commands:
