@@ -23,6 +23,7 @@ steps:
 
 - name: publish
   commands:
+  - $env:NUGET_PACKAGES = 'C:\Users\andrew_page\.nuget\packages'
   - dotnet publish --configuration Release
 
 - name: compress artifact
