@@ -7,9 +7,6 @@ platform:
   arch: amd64
 
 steps:
-- name: greeting
-  commands:
-  - echo hello world 3
 - name: build
   commands:
 #  - pwd
@@ -32,4 +29,4 @@ steps:
 
 - name: copy artifact to GCS
   commands:
-  - gsutil cp C:\Windows\Temp\mycoreapp.91.zip gs://onotio_windows_artifact/mycoreapp.91.zip
+  - gsutil cp C:\Windows\Temp\mycoreapp.$env:CI_BUILD_NUMBER.zip gs://onotio_windows_artifact/mycoreapp.$env:CI_BUILD_NUMBER.zip
