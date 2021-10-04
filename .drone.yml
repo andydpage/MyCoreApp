@@ -23,3 +23,9 @@ steps:
    - dotnet publish --configuration Release
    - Compress-Archive -Path $env:DRONE_WORKSPACE\MyCoreApp\bin\Release\netcoreapp3.1 -DestinationPath C:\Windows\Temp\mycoreapp.$env:CI_BUILD_NUMBER.zip
 #   - sleep 120
+
+- name: test
+  image: alpine
+  commands:
+  - echo hello
+  - echo world
