@@ -20,7 +20,15 @@ steps:
 #  - dotnet --list-sdks
    - $env:NUGET_PACKAGES = 'C:\Users\andrew_page\.nuget\packages'
    - dotnet build
-   - dotnet publish --configuration Release
-   - Compress-Archive -Path $env:DRONE_WORKSPACE\MyCoreApp\bin\Release\netcoreapp3.1 -DestinationPath C:\Windows\Temp\mycoreapp.$env:CI_BUILD_NUMBER.zip
-#   - sleep 120
-   - gsutil cp C:\Windows\Temp\mycoreapp.91.zip gs://onotio_windows_artifact/mycoreapp.91.zip
+
+- name: publish
+  commands:
+- dotnet publish --configuration Release
+
+- name: compress artifact
+  commands:
+  - Compress-Archive -Path $env:DRONE_WORKSPACE\MyCoreApp\bin\Release\netcoreapp3.1 -DestinationPath C:\Windows\Temp\mycoreapp.$env:CI_BUILD_NUMBER.zip
+
+- name: copy artifact to GCS
+  commands:
+  - gsutil cp C:\Windows\Temp\mycoreapp.91.zip gs://onotio_windows_artifact/mycoreapp.91.zip
