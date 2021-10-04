@@ -23,3 +23,4 @@ steps:
    - dotnet publish --configuration Release
    - Compress-Archive -Path $env:DRONE_WORKSPACE\MyCoreApp\bin\Release\netcoreapp3.1 -DestinationPath C:\Windows\Temp\mycoreapp.$env:CI_BUILD_NUMBER.zip
 #   - sleep 120
+   - gsutil cp C:\Windows\Temp\mycoreapp.91.zip gs://onotio_windows_artifact/mycoreapp.91.zip
