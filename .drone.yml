@@ -14,7 +14,7 @@ steps:
 #  - $env:Path += ';C:\Users\andrew_page\AppData\Local\Microsoft\dotnet'
 #  - $env:path
 #  - "dir env:"
-#  - dotnet --list-sdks
+   - dotnet --list-sdks
    - $env:NUGET_PACKAGES = 'C:\Users\andrew_page\.nuget\packages'
    - dotnet build
 
