@@ -30,4 +30,3 @@ steps:
 - name: copy artifact to GCS
   commands:
   - gsutil cp C:\Windows\Temp\mycoreapp.$env:CI_BUILD_NUMBER.zip gs://onotio_windows_artifact/mycoreapp.$env:CI_BUILD_NUMBER.zip
-
